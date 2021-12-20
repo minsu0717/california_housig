@@ -44,4 +44,10 @@ def run_eda_app():
     else :
         st.dataframe(df_ch.loc[df_ch['price'].min()==df_ch['price'],])
         
+    st.subheader('각 도시에 따른 평균 가격')
+    city = df['city'].unique()
+    select_city=st.selectbox('도시를 선택해주세요',city)
+    
+    st.write(df.groupby('city').mean().loc[:,:'price'].loc[select_city])
+        
     

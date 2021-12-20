@@ -4,6 +4,7 @@ import pandas as pd
 from PIL import Image
 
 from eda_app import run_eda_app
+from ml_app import run_ml_app
 
 def main():
     st.title('미국 집값 예측하기')
@@ -21,7 +22,7 @@ def main():
         run_eda_app()
     
     elif choice == 'ML':
-        pass
+        run_ml_app()
 
 if __name__ == '__main__':
     main()
