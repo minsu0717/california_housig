@@ -38,18 +38,31 @@ def run_eda_app():
     else :
         st.write('선택한 컬럼이 없습니다')
         
-    st.subheader('인구수가 가장 높은 곳과 낮은 곳')
-    radio_menu = ['높은곳','낮은곳']
+    st.subheader('인구수가 가장 많은 곳과 적은 곳')
+    radio_menu = ['많은 곳','적은 곳']
     choice_radio=st.radio('선택하세요',radio_menu)
-    if choice_radio == '높은곳':
+    if choice_radio == '많은곳':
+        st.map(df.loc[df['population'].max() == df['population'],])
         st.dataframe(df.loc[df['population'].max() == df['population'],])
     else :
+        st.map(df.loc[df['population'].min() == df['population'],])
         st.dataframe(df.loc[df['population'].min() == df['population'],])
         
+    st.subheader('세대 수가 가장 높은 곳과 낮은 곳')
+    radio_menu_2 = ['높은 곳','낮은 곳']
+    choice_radio_2 = st.radio('선택하세요',radio_menu_2)
+    if choice_radio_2 == '높은 곳':
+        st.map(df.loc[df['households'].max() == df['households'],])
+        st.dataframe(df.loc[df['households'].max() == df['households'],])
+    else :
+        st.map(df.loc[df['households'].min() == df['households'],])
+        st.dataframe(df.loc[df['households'].min() == df['households'],])
+    
+       
     st.subheader('가격에 따른 주택 데이터 표시')
     number = st.slider('선택',value=[df['median_house_value'].min(),df['median_house_value'].max()],min_value=df['median_house_value'].min(),max_value=df['median_house_value'].max())
     st.write(df.loc[(df['median_house_value']>=number[0])&(df['median_house_value']<=number[1]),])
-    
+    st.map(df.loc[(df['median_house_value']>=number[0])&(df['median_house_value']<=number[1]),])
         
     st.subheader('데이터 시각화')
     menu1=['위도와 경도에 따른 분포','건축 년도에 따른 주택 가격 평균','바다 근접도에 따른 가격 평균','상관관계 분석']

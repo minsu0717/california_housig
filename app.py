@@ -24,7 +24,7 @@ def main():
         run_eda_app()
     
     elif choice == 'ML':
-        pass
+        run_ml_app()
 
 if __name__ == '__main__':
     main()
