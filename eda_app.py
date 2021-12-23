@@ -29,6 +29,7 @@ def run_eda_app():
     st.subheader('전체 데이터 시각화')
     st.map(df)
     df.hist(figsize=(10,10),bins=10)
+    st.set_option('deprecation.showPyplotGlobalUse',False)
     st.pyplot()
     
     st.subheader('원하는 컬럼 보기')
