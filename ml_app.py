@@ -8,6 +8,7 @@ def run_ml_app():
     
     df=pd.read_csv('data/housing.csv')
     df=df.dropna()
+    df=df.iloc[:1000,:]
     
     st.image('https://www.researchgate.net/profile/Maria-Fonseca-47/publication/325722746/figure/fig4/AS:636796719345665@1528835577892/Figura-1-Condados-counties-do-Estado-da-California-mapa-de-referencia.png')
     st.write('위의 사진을 보고 위도와 경도를 설정해주세요')
