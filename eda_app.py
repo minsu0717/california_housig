@@ -6,6 +6,7 @@ import seaborn as sns
 
 def run_eda_app():
     st.subheader('EDA 화면 입니다.')
+    st.text('ec2 프리티어를 사용해서 느립니다. 양해 부탁 드립니다.')
     
     df=pd.read_csv('data/housing.csv')
     df.dropna(inplace=True)
@@ -24,6 +25,7 @@ def run_eda_app():
         st.text('ocean_proximity = 바다 근접도')
     else :
         st.dataframe(df)
+        st.text('통계치')
         st.write(df.describe())
 
     st.subheader('전체 데이터 시각화')

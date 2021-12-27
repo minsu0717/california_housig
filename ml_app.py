@@ -5,7 +5,7 @@ import joblib
 
 def run_ml_app():
     st.subheader('Machine Learning 예측')
-    
+    st.text('코랩에서 코딩을 하였고,MinMaxScaler를 사용했습니다.')
     df=pd.read_csv('data/housing.csv')
     df=df.dropna()
     df=df.iloc[:1000,:]
@@ -35,6 +35,6 @@ def run_ml_app():
     y_pred=scaler_y.inverse_transform(y_pred.reshape(1,1))
     
     if st.button('예측 결과 보기'):
-        st.write('예측 결과! 중간 주택 가격이 {}을 살 수 있습니다.'.format(y_pred))
+        st.write('예측 결과! 중간 주택 가격 {}달러를 살 수 있습니다.'.format(round(y_pred[0][0]),2))
     
     
