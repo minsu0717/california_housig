@@ -5,8 +5,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def run_eda_app():
-    st.subheader('EDA 화면 입니다.')
-    st.text('ec2 프리티어를 사용해서 느립니다. 양해 부탁 드립니다.')
+    st.subheader('EDA 화면 입니다.\
+        ec2 프리티어를 사용해서 느립니다. 양해 부탁 드립니다.')
+    
     
     df=pd.read_csv('data/housing.csv')
     df.dropna(inplace=True)
