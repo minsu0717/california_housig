@@ -49,4 +49,4 @@ MinMaxSclaer를 할 때 X와 y 따로 스케일러 생성 , y는 판다스 시�
 ![8](https://user-images.githubusercontent.com/96038772/161668970-5dc80c51-1dab-47ae-87a9-a3ac3c31b1ca.png)
 
 # ML
-
+![9](https://user-images.githubusercontent.com/96038772/161669146-8457da0e-823f-47da-ad65-13502b826358.png)
