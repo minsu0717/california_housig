@@ -1,1 +1,2 @@
-# california housing
+# 캘리포니아 집값 분석
+
