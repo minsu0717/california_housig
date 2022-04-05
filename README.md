@@ -42,6 +42,11 @@ MinMaxSclaer를 할 때 X와 y 따로 스케일러 생성 , y는 판다스 시�
 ![1](https://user-images.githubusercontent.com/96038772/161668858-f847bcba-3e39-492d-8861-8758a663d479.png)
 
 # EDA화면
+![2](https://user-images.githubusercontent.com/96038772/161668888-014d3354-6cc8-4081-817c-df9bf42c71d6.png)
+![3](https://user-images.githubusercontent.com/96038772/161668903-18102b82-53db-42f0-9e59-c3611eb393a7.png)
+![6](https://user-images.githubusercontent.com/96038772/161668959-a793f853-59d8-4940-b2fe-8493064ab0f0.png)
+![7](https://user-images.githubusercontent.com/96038772/161668965-266f5854-07ca-4537-aa45-1dca9c85deaf.png)
+![8](https://user-images.githubusercontent.com/96038772/161668970-5dc80c51-1dab-47ae-87a9-a3ac3c31b1ca.png)
 
 # ML
 
