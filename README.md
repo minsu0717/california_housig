@@ -39,5 +39,9 @@ MinMaxSclaer를 할 때 X와 y 따로 스케일러 생성 , y는 판다스 시�
 
 
 #홈화면
+![1](https://user-images.githubusercontent.com/96038772/161668858-f847bcba-3e39-492d-8861-8758a663d479.png)
 
+#EDA화면
+
+#ML
 
